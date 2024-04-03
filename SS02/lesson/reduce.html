@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+            reduce : thực hiện tính toán.
+            accumulator: biến tích lũy, giống sum = 0;
+            nếu không truyền 0 vào thì nó sẽ lấy phần tử đầu tiên trong mảng là biến tích lũy.
+        */
+      let carts = [
+        {
+          product: "iphone6",
+          price: 8000,
+          quantity: 5,
+        },
+        {
+          product: "iphone4",
+          price: 9000,
+          quantity: 2,
+        },
+        {
+          product: "iphoneX",
+          price: 1000,
+          quantity: 1,
+        },
+      ];
+
+      let sum = 0;
+      for (let i = 0; i < carts.length; i++) {
+        sum += carts[i].price * carts[i].quantity;
+      }
+      console.log(sum);
+
+      //nhận 3 tham số accumulator: biến tích lũy/ currentValue: giá trị hiện tại/ arr: mảng gốc.
+      let reduce = carts.reduce((accumulator, currentValue, arr) => {
+        return acc + currentValue.price * currentValue.quantity;
+      }, 0);
+      // sau dấu phẩy là giá trị khởi tạo(tích lũy).
+    </script>
+  </body>
+</html>

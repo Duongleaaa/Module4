@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arrayNum = [1, 2, 3, 4, 5, 6];
+      //cách 1
+      function sum1(arr) {
+        let newArr = arr.reduce((accumulator, currentValue, arr) => {
+          return (accumulator += currentValue);
+        }, 0);
+        return newArr;
+      }
+      console.log(sum1(arrayNum));
+      //cách 2
+      function sum2(arr) {
+        let result = 0;
+        arr.forEach((e, i, arr) => {
+          return (result += e);
+        });
+        return result;
+      }
+      console.log(sum2(arrayNum));
+    </script>
+  </body>
+</html>

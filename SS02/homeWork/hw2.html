@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function hasUppercase(string) {
+        // chuyển chuỗi thành mảng
+        //Phương thức Array.from(), split()
+        let arr = string.split("");
+        // tìm kiếm trong mảng có phần tử nào viết hoa không
+        let test = arr.some((e, i, arr) => {
+          return e === arr[i].toUpperCase();
+        });
+        return test;
+      }
+      console.log(hasUppercase("hello"));
+    </script>
+  </body>
+</html>

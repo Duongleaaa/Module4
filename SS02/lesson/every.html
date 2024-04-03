@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+        every(): tất cả
+        -Duyệt các phần tử trong mảng
+        - Trả về: nếu tất cả thỏa mãn.true / nếu có 1 phần tử  không thỏa mãn.false
+        */
+      let numbers = [4, 5, 6, 7, 8];
+      let research = numbers.every((item, index, arr) => {
+        // console.log(item);
+        // console.log(index);
+        // console.log(arr);
+        return item > 3;
+      });
+      console.log(research);
+    </script>
+  </body>
+</html>
