@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let users = [
+        { id: 1, name: "Alice", hobbies: ["Reading", "Drawing"] },
+        { id: 2, name: "Bob", hobbies: ["Gaming", "Cooking"] },
+      ];
+      function hobbiesArr(userArr) {
+        //cách 1 dùng flat map
+        const newHobbies = userArr.flatMap((element) => element.hobbies);
+        return newHobbies;
+      }
+      console.log(hobbiesArr(users));
+      // cách 2 dùng map lấy ra một mảng chứa mảng sở thích. Dùng reduce để nối
+      function way2(userArr) {
+        //lấy mảng chứa sơr thích cho vào một mảng
+        let newArr = userArr.map((item, index, arr) => {
+          return item.hobbies;
+        });
+        // dùng reduce
+        let superNewArr = newArr.reduce((accumulator, currentValue, arr) => {
+          return accumulator.concat(currentValue);
+        });
+        return superNewArr;
+      }
+      console.log(way2(users));
+      // const arr1 = [1, 2, 3, 4];
+      // const arr2 = [5, 6, 7, 8];
+      // const arr3 = [5, 6, 7, 8];
+
+      // const newArr = [...arr1, ...arr2, ...arr3];
+
+      // console.log(newArr);
+    </script>
+  </body>
+</html>

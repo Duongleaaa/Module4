@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      users = [
+        {
+          userName: "Doibacnhuvoi",
+          passWord: "12345",
+        },
+        {
+          userName: "GG",
+          passWord: "123 45",
+        },
+        {
+          userName: "HH",
+          passWord: "128845",
+        },
+      ];
+
+      let indexUser = users.findIndex((item, index, arr) => {
+        for (let i = 0; i < item.passWord.length; i++) {
+          if (item.passWord[i] == " ") {
+            return index;
+          }
+        }
+      });
+      if (indexUser == -1) {
+        console.log("Mọi tài khoản hợp lệ!");
+      } else {
+        console.log(indexUser);
+      }
+    </script>
+  </body>
+</html>

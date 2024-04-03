@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function findNumbers(arr, num) {
+        let number = arr.filter((item) => {
+          return item <= num;
+        });
+        let result;
+        for (let i = 0; i < number.length; i++) {
+          result = number[i] < number[i + 1] ? number[i + 1] : number[i];
+        }
+        return result;
+      }
+
+      let arr = [1, 2, 6, 3, 8];
+      let num = 9;
+      console.log(findNumbers(arr, num));
+    </script>
+  </body>
+</html>

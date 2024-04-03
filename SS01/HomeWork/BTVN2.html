@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let classRoom = [
+        {
+          id: 1,
+          number: 25,
+        },
+        {
+          id: 2,
+          number: 30,
+        },
+        {
+          id: 3,
+          number: 50,
+        },
+      ];
+      let result = classRoom.map((item, index, arr) => {
+        if (item.number < 30) {
+          return item.number + 10;
+        } else if (item.number > 40) {
+          return item.number - 10;
+        } else {
+          return item.number;
+        }
+      });
+
+      console.log(result);
+    </script>
+  </body>
+</html>

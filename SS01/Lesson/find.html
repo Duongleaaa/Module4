@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+      find(): tìm kiếm phần tử thỏa mãn điều kiện.
+        - Trả về một phần tử thỏa mãn. Nếu không thì trả undifine.
+      */
+      let array = [
+        {
+          id: 1,
+          name: "dung",
+        },
+        {
+          id: 3,
+          name: "hoang",
+        },
+      ];
+      let result = array.find((item, index, arr) => {
+        return item.id == 3;
+      });
+      console.log(result);
+    </script>
+  </body>
+</html>

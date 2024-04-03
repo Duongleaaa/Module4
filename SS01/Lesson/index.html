@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Các hàm nâng cao trong js
+        1.forEach()
+        2. map()
+        3.filter()
+        4.find()
+        5.findIndex()
+
+        [?] Sự khác nhau giữa hàm mũi tên và hàm thường.(5)
+        1. Hàm mũi tên phải gọi sau khi khai báo
+        2. Cú pháp ngắn hơn function thường.
+        3. Đối với hàm mũi tên không dùng được arguments.(cái này lấy hết các đối số truyền vào)
+        function num(arguments){
+            return arguments;
+        }
+        num(1,2,3,4,5)
+        
+        4.Không thể dùng làm hàm tạo constructor.
+         -Các cách tạo obj:
+            bằng từ khóa
+            bằng new Object
+            bằng class
+            bằng function. hàm tạo viết hoa chữ đầu: function Student(name,age){
+                this.name1 = name;
+                this.age1 = age;
+            }
+            sử dụng: let student1 = new Student('Hoa',25);
+                     let student2 = new Student('Hung',20);
+
+        5.binding(ràng buộc) this.
+        -Đối với function thường, khi obj gọi phương thức thì this đại diện cho obj đó.
+        let obj = {
+            name:'hong',
+            address:'ha noi',
+            getAddress: function(){
+                clg('gia tri',this.address);
+            }
+        }
+        nếu cái này dùng hàm mũi tên thì ra undifine.
+        Nên đối với hàm mũi tên, this đại diện cho Window( trình duyệt).
+         -->
+    <script>
+      // hàm bình thường.
+      //spread khác rest (...). rest truyền vào một mảng.
+      // có thể gọi sau khi khai báo và trước khi khai báo.
+      //   function sum(a, b) {
+      //     return a + b;
+      //   }
+      //   console.log(sum(1, 5));
+    </script>
+  </body>
+</html>

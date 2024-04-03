@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function insertArr(firstArr, secondArr, index) {
+        let insertIndex = index;
+        secondArr.forEach((item) => {
+          firstArr.splice(insertIndex, 0, item);
+          insertIndex++;
+        });
+        return firstArr;
+      }
+
+      let firstArr = [1, 2, "a", 6, 7];
+      let secondArr = ["b", "hai"];
+      let index = 2;
+      console.log(insertArr(firstArr, secondArr, index));
+    </script>
+  </body>
+</html>

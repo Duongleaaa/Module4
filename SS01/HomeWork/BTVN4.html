@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let books = [
+        {
+          id: 1,
+          name: "Tôi thấy hoa xanh trên cỏ vàng",
+        },
+        {
+          id: 2,
+          name: "Vua trời cho",
+        },
+        {
+          id: 3,
+          name: "Trò chơi vương vấn",
+        },
+      ];
+      let findBook = books.findIndex((item, index, arr) => {
+        return item.id === 2;
+      });
+      console.log(books[findBook]);
+    </script>
+  </body>
+</html>
