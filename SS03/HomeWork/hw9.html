@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function mergeArr(...arrays) {
+        const maxLength = Math.max(...arrays.map((array) => array.length));
+        const mergedArray = [];
+
+        for (let i = 0; i < maxLength; i++) {
+          const tempArray = arrays.map((array) => array[i]);
+          mergedArray.push(tempArray);
+        }
+
+        return mergedArray;
+      }
+
+      const arr1 = [1, 2, 3];
+      const arr2 = ["a", "b", "c"];
+      const arr3 = [true, false, true];
+
+      const result = mergeArr(arr1, arr2, arr3);
+      console.log(result);
+    </script>
+  </body>
+</html>

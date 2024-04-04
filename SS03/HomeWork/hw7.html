@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function mergeObjects(...objects) {
+        // khai báo một đối tượng rỗng
+        let mergedObject = {};
+        // gán thuộc tính của đối tượng cũ bằng đối tượng mới.
+        for (let object of objects) {
+          for (let key in object) {
+            mergedObject[key] = object[key];
+          }
+        }
+
+        return mergedObject;
+      }
+      function objUnify(...objects) {
+        return mergeObjects(...objects);
+      }
+
+      console.log(
+        objUnify(
+          {
+            id: 1,
+            name: "GG",
+          },
+          {
+            id: 3,
+            name: "FF",
+            study: "C#",
+          },
+          {
+            id: 2,
+            name: "AA",
+          }
+        )
+      );
+    </script>
+  </body>
+</html>
