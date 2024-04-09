@@ -1,0 +1,11 @@
+"use strict";
+let a7 = 6;
+let b7 = 2;
+let c7 = a7 + b7;
+console.log(c7);
+c7 = a7 - b7;
+console.log(c7);
+c7 = a7 * b7;
+console.log(c7);
+c7 = a7 / b7;
+console.log(c7);
