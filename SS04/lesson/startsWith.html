@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- cách validate size ảnh -->
+    <input type="file" onchange="changeImage(this)" />
+    <button onclick="saveImage()">Save</button>
+    <script>
+      /*startsWith lấy từ đầu so sánh và endsWith thì ngược lại.
+       */
+      let text = "Cố gắng học lập trình";
+      let result = text.startsWith("Cố");
+      console.log(result);
+      //function lưu ảnh
+      function saveImage(param) {}
+      // function thay đổi ảnh
+      function changeImage(element) {
+        console.log(element.files[0]);
+        if (element.file[0].size > 1000000) {
+          console.log("khong cho luu");
+          return;
+        }
+      }
+    </script>
+  </body>
+</html>
