@@ -10,6 +10,7 @@ console.log(typeof number);
 console.log(Array.isArray(number));// cách kiểm tra mảng có phải mảng không.
 
 //--------------------------------------------------------------------------------
+//union type
 console.log(5|6);
 /*
 biểu diễn nhị phân cơ số 2
