@@ -1,0 +1,12 @@
+.containerHw8 {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.headerHw8 {
+  grid-column: 1/4;
+}
+.navHw8 {
+  grid-column: 1/4;
+}

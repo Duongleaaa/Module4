@@ -1,0 +1,22 @@
+.containerBox {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.Box4 {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.containerBox :nth-child(1) {
+  background-color: red;
+}
+.containerBox :nth-child(2) {
+  background-color: blue;
+}
+.containerBox :nth-child(3) {
+  background-color: green;
+}

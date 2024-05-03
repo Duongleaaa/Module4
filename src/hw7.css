@@ -1,0 +1,14 @@
+.cpnContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+.header {
+  grid-column: 1/3;
+}
+.footer {
+  grid-column: 2/3;
+}
+.menu {
+  grid-row: 2/4;
+}
