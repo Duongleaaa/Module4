@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.container-choose {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-add {
+  background-color: cornflowerblue;
+  border-radius: 4px;
+  padding: 6px 4rem;
+  border: transparent;
+  color: white;
+  font-size: larger;
+}
+.sumOrSub {
+  display: flex;
+  gap: 10px;
+}
+.sumOrSub button {
+  border: transparent;
+
+  padding: 0px 10px;
+  font-size: larger;
+  border-radius: 6px;
+}
